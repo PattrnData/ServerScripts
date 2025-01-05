@@ -1,10 +1,10 @@
 #!/bin/bash
-cd /home/steam/zomboid
+cd /home/hl-zomboid/zomboid
 
 echo "Starting the Server..."
-sudo -u steam /home/steam/scripts/includes/start.sh
+sudo -u hl-zomboid /home/hl-zomboid/scripts/includes/start.sh
 echo "> Done"
 echo ""
 
 echo "Screens:"
-sudo -u steam /usr/bin/screen -ls
+sudo -u hl-zomboid /usr/bin/screen -ls
