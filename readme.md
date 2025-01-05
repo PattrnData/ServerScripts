@@ -54,38 +54,38 @@ MAILTO=""
 # ==============================================
 # PROJECT ZOMBOID SERVER SOFTWARE --------------
 #       On startup      Start the Zomboid Server after 10 seconds
-#       09:00-23:00     Make sure the server is running, restart if needed
+#       00:00-24:00     Make sure the server is running, restart if needed
 #       01:45           Stop Zomboid, Backup and Shutdown System
 # ==============================================
-@reboot sudo -u steam "/home/steam/scripts/cron_startup.sh" > /home/steam/logs/autostart.log
-* 9-23 * * * /home/steam/scripts/cron_monitor.sh >> /home/steam/logs/monitor.log
-45  1 * * * /home/steam/scripts/cron_shutdown.sh > /home/steam/logs/autoshutdown.log
+@reboot sudo -u hl-zomboid "/home/hl-zomboid/scripts/cron_startup.sh" > /home/hl-zomboid/logs/autostart.log
+* 0-24 * * * /home/hl-zomboid/scripts/cron_monitor.sh >> /home/hl-zomboid/logs/monitor.log
+00  4 * * * /home/hl-zomboid/scripts/cron_shutdown.sh > /home/hl-zomboid/logs/autoshutdown.log
 
 # ==============================================
 # TIME MESSAGES FOR ZOMBOID --------------------
 # ==============================================
- 0 12 * * * /home/steam/scripts/includes/message.sh "12:00 PM"
- 0 17 * * * /home/steam/scripts/includes/message.sh "05:00 PM"
- 0 21 * * * /home/steam/scripts/includes/message.sh "09:00 PM"
-30 21 * * 0-4 /home/steam/scripts/includes/message.sh "09:30 PM"
- 0 22 * * * /home/steam/scripts/includes/message.sh "10:00 PM"
-30 22 * * 0-4 /home/steam/scripts/includes/message.sh "10:30 PM"
-45 22 * * 0-4 /home/steam/scripts/includes/message.sh "10:45 PM"
- 0 23 * * * /home/steam/scripts/includes/message.sh "11:00 PM"
-15 23 * * 0-4 /home/steam/scripts/includes/message.sh "11:15 PM"
-30 23 * * * /home/steam/scripts/includes/message.sh "11:30 PM"
-45 23 * * 0-4 /home/steam/scripts/include/smessage.sh "11:45 PM"
- 0  0 * * * /home/steam/scripts/includes/message.sh "12:00 AM"
-15  0 * * * /home/steam/scripts/includes/message.sh "12:15 AM"
-30  0 * * * /home/steam/scripts/includes/message.sh "12:30 AM"
-45  0 * * * /home/steam/scripts/includes/message.sh "12:45 (Shutdown in 01 hour)"
- 0  1 * * * /home/steam/scripts/includes/message.sh "01:00 (Shutdown in 45 minutes)"
-15  1 * * * /home/steam/scripts/includes/message.sh "01:15 (Shutdown in 30 minutes)"
-30  1 * * * /home/steam/scripts/includes/message.sh "01:30 (Shutdown in 15 minutes)"
-35  1 * * * /home/steam/scripts/includes/message.sh "Shutdown in 10 minutes"
-40  1 * * * /home/steam/scripts/includes/message.sh "Shutdown in 5 minutes"
-41  1 * * * /home/steam/scripts/includes/message.sh "Shutdown in 4 minutes"
-42  1 * * * /home/steam/scripts/includes/message.sh "Shutdown in 3 minutes"
-43  1 * * * /home/steam/scripts/includes/message.sh "Shutdown in 2 minutes"
-44  1 * * * /home/steam/scripts/includes/message.sh "Shutdown in 1 minute"
+ 0 12 * * * /home/hl-zomboid/scripts/includes/message.sh "12:00 PM"
+ 0 17 * * * /home/hl-zomboid/scripts/includes/message.sh "05:00 PM"
+ 0 21 * * * /home/hl-zomboid/scripts/includes/message.sh "09:00 PM"
+30 21 * * 0-4 /home/hl-zomboid/scripts/includes/message.sh "09:30 PM"
+ 0 22 * * * /home/hl-zomboid/scripts/includes/message.sh "10:00 PM"
+30 22 * * 0-4 /home/hl-zomboid/scripts/includes/message.sh "10:30 PM"
+45 22 * * 0-4 /home/hl-zomboid/scripts/includes/message.sh "10:45 PM"
+ 0 23 * * * /home/hl-zomboid/scripts/includes/message.sh "11:00 PM"
+15 23 * * 0-4 /home/hl-zomboid/scripts/includes/message.sh "11:15 PM"
+30 23 * * * /home/hl-zomboid/scripts/includes/message.sh "11:30 PM"
+45 23 * * 0-4 /home/hl-zomboid/scripts/include/smessage.sh "11:45 PM"
+ 0  0 * * * /home/hl-zomboid/scripts/includes/message.sh "12:00 AM"
+15  0 * * * /home/hl-zomboid/scripts/includes/message.sh "12:15 AM"
+30  0 * * * /home/hl-zomboid/scripts/includes/message.sh "12:30 AM"
+00  3 * * * /home/hl-zomboid/scripts/includes/message.sh "03:00 (Shutdown in 01 hour)"
+15  3 * * * /home/hl-zomboid/scripts/includes/message.sh "03:15 (Shutdown in 45 minutes)"
+30  3 * * * /home/hl-zomboid/scripts/includes/message.sh "03:30 (Shutdown in 30 minutes)"
+45  3 * * * /home/hl-zomboid/scripts/includes/message.sh "03:45 (Shutdown in 15 minutes)"
+50  3 * * * /home/hl-zomboid/scripts/includes/message.sh "Shutdown in 10 minutes"
+55  3 * * * /home/hl-zomboid/scripts/includes/message.sh "Shutdown in 5 minutes"
+56  3 * * * /home/hl-zomboid/scripts/includes/message.sh "Shutdown in 4 minutes"
+57  3 * * * /home/hl-zomboid/scripts/includes/message.sh "Shutdown in 3 minutes"
+58  3 * * * /home/hl-zomboid/scripts/includes/message.sh "Shutdown in 2 minutes"
+59  3 * * * /home/hl-zomboid/scripts/includes/message.sh "Shutdown in 1 minute"
 ```
