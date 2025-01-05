@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/steam/zomboid
+cd /home/hl-zomboid/zomboid
 message="servermsg \"$1\"\n"
 echo "Sending: \"$message\""
-sudo -u steam /usr/bin/screen -x zomboid -X stuff "$message"
+sudo -u hl-zomboid /usr/bin/screen -x zomboid -X stuff "$message"
