@@ -1,7 +1,7 @@
 #!/bin/bash
-cd /home/steam/zomboid
+cd /home/hl-zomboid/zomboid
 echo "Stopping the Server...."
-sudo -u steam /home/steam/scripts/includes/message.sh "Server is stopping"
+sudo -u hl-zomboid /home/hl-zomboid/scripts/includes/message.sh "Server is stopping"
 sleep 3;
-sudo -u steam /home/steam/scripts/includes/stop.sh
+sudo -u hl-zomboid /home/hl-zomboid/scripts/includes/stop.sh
 echo "> Done"
