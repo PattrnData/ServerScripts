@@ -1,13 +1,13 @@
 #!/bin/bash
-cd /home/steam/zomboid
+cd /home/hl-zomboid/zomboid
 
 # Stop the Server
 echo "Stopping the Server..."
 echo "> Giving users a 5 second warning"
-sudo -u steam /home/steam/scripts/includes/message.sh "Restarting the Server"
+sudo -u hl-zomboid /home/hl-zomboid/scripts/includes/message.sh "Restarting the Server"
 sleep 5
 echo "> Executing stop request..."
-sudo -u steam /home/steam/scripts/includes/stop.sh
+sudo -u hl-zomboid /home/hl-zomboid/scripts/includes/stop.sh
 echo ">> Done"
 echo ""
 
@@ -19,10 +19,10 @@ echo ""
 
 # Start the Server
 echo "Starting the Server..."
-sudo -u steam /home/steam/scripts/includes/start.sh
+sudo -u hl-zomboid /home/hl-zomboid/scripts/includes/start.sh
 echo "> Done"
 echo ""
 
 # Display Running Screens
 echo "Running Screens:"
-sudo -u steam /usr/bin/screen -ls
+sudo -u hl-zomboid /usr/bin/screen -ls
