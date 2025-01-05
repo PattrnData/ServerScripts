@@ -49,21 +49,21 @@ fi
 
 #2: Create a World Backup in a compressed format
 #   Zomboid uses a ridiculous amount of individual small files to record world state
-compressFolder "/home/steam/Zomboid/Saves/Multiplayer/servertest/"  "/home/steam/world-backup.tar.gz"
-backupFile     "Zomboid: World"   "/home/steam/world-backup.tar.gz" "Zomboid/world-backup.tar.gz"
-rm "/home/steam/world-backup.tar.gz"
+compressFolder "/home/hl-zomboid/Zomboid/Saves/Multiplayer/servertest/"  "/home/hl-zomboid/world-backup.tar.gz"
+backupFile     "Zomboid: World"   "/home/hl-zomboid/world-backup.tar.gz" "Zomboid/world-backup.tar.gz"
+rm "/home/hl-zomboid/world-backup.tar.gz"
 
 #3: Run Other Backups
 #Folder/File    Name                Local Path                                              Remote Path (relative)
-backupFolder    "System: Scripts"  "/home/steam/scripts/"                                   "scripts"
-backupFolder    "System: Logs"     "/home/steam/logs/"                                      "logs"
-backupFile      "System: Notes"    "/home/steam/notes.txt"                                  "notes.txt"
-backupFolder    "Zomboid: db"      "/home/steam/Zomboid/db/"                                "Zomboid/db"
-backupFolder    "Zomboid: Logs"    "/home/steam/Zomboid/Logs/"                              "Zomboid/Logs"
-backupFolder    "Zomboid: Server"  "/home/steam/Zomboid/Server/"                            "Zomboid/Server"
-backupFile      "Zomboid: Option"  "/home/steam/Zomboid/options.ini"                        "Zomboid/options.ini"
-backupFile      "Zomboid: Console" "/home/steam/Zomboid/server-console.txt"                 "Zomboid/server-console.txt"
-backupFolder    "Zomboid: Mods"    "/home/steam/zomboid/steamapps/workshop/content/108600/" "mods"
+backupFolder    "System: Scripts"  "/home/hl-zomboid/scripts/"                                   "scripts"
+backupFolder    "System: Logs"     "/home/hl-zomboid/logs/"                                      "logs"
+backupFile      "System: Notes"    "/home/hl-zomboid/notes.txt"                                  "notes.txt"
+backupFolder    "Zomboid: db"      "/home/hl-zomboid/Zomboid/db/"                                "Zomboid/db"
+backupFolder    "Zomboid: Logs"    "/home/hl-zomboid/Zomboid/Logs/"                              "Zomboid/Logs"
+backupFolder    "Zomboid: Server"  "/home/hl-zomboid/Zomboid/Server/"                            "Zomboid/Server"
+backupFile      "Zomboid: Option"  "/home/hl-zomboid/Zomboid/options.ini"                        "Zomboid/options.ini"
+backupFile      "Zomboid: Console" "/home/hl-zomboid/Zomboid/server-console.txt"                 "Zomboid/server-console.txt"
+backupFolder    "Zomboid: Mods"    "/opt/pzserver/steamapps/workshop/content/108600/" "mods"
 
 #4: Backup Crontab
 echoLog "Creating Cronjob Backup...";
