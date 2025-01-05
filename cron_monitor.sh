@@ -4,7 +4,7 @@
 cmd_screen="pgrep screen";
 cmd_steam="pgrep steamcmd";
 cmd_zomboid="pgrep ProjectZomboid";
-script_update="/home/steam/scripts/cron_update.sh"
+script_update="/home/hl-zomboid/scripts/cron_update.sh"
 sleep=10
 testcount=0;
 mid=""
