@@ -20,12 +20,12 @@ drawLine
 echo "$(date)"
 drawLine
 drawHeader 1 4 "Stopping Zomboid"
-cd /home/steam/scripts
-sudo -u steam /home/steam/scripts/includes/stop.sh
+cd /home/hl-zomboid/scripts
+sudo -u hl-zomboid /home/hl-zomboid/scripts/includes/stop.sh
 sleep 10
 
 drawHeader 2 4 "Backing up Zomboid"
-cd /home/steam/scripts
+cd /home/hl-zomboid/scripts
 source backup.sh
 sleep 5
 
