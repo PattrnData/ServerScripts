@@ -9,8 +9,8 @@ function drawHeader () {
         drawLine
 }
 
-rm /home/steam/logs/monitor.log
-touch /home/steam/logs/monitor.log
+rm /home/hl-zomboid/logs/monitor.log
+touch /home/hl-zomboid/logs/monitor.log
 
 drawLine
 echo "$(date)"
@@ -21,14 +21,14 @@ sleep 10
 echo ">> Done!"
 
 drawHeader 2 3 "Updating Zomboid & Mods"
-cd /home/steam/zomboid
-sudo -u steam /home/steam/scripts/includes/update.sh
+cd /home/hl-zomboid/zomboid
+sudo -u hl-zomboid /home/hl-zomboid/scripts/includes/update.sh
 sleep 5
 drawLine
 
 drawHeader 3 3 "Starting Zomboid Server"
-cd /home/steam/zomboid
-sudo -u steam /home/steam/scripts/includes/start.sh
+cd /home/hl-zomboid/zomboid
+sudo -u hl-zomboid /home/hl-zomboid/scripts/includes/start.sh
 /usr/bin/screen -ls
 
 drawLine
