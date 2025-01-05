@@ -13,14 +13,14 @@ drawLine
 echo "$(date)"
 drawLine
 drawHeader 1 2 "Updating Zomboid & Mods"
-cd /home/steam/zomboid
-sudo -u steam /home/steam/scripts/includes/update.sh
+cd /home/hl-zomboid/zomboid
+sudo -u hl-zomboid /home/hl-zomboid/scripts/includes/update.sh
 sleep 1
 drawLine
 
 drawHeader 2 2 "Starting Zomboid Server"
-cd /home/steam/zomboid
-sudo -u steam /home/steam/scripts/includes/start.sh
+cd /home/hl-zomboid/zomboid
+sudo -u hl-zomboid /home/hl-zomboid/scripts/includes/start.sh
 /usr/bin/screen -ls
 
 drawLine
