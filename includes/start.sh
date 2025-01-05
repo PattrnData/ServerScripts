@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/steam/zomboid
-sudo -u steam /usr/bin/screen -dmS zomboid /home/steam/zomboid/start-server.sh
+cd /home/hl-zomboid/zomboid
+sudo -u hl-zomboid /usr/bin/screen -dmS zomboid /home/hl-zomboid/zomboid/start-server.sh
